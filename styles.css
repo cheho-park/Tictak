@@ -1,0 +1,83 @@
+/* --- 전체 페이지 스타일 --- */
+body {
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* --- 페이지 제목 스타일 --- */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* --- 게임 보드 컨테이너 --- */
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* --- 각 셀 스타일 --- */
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fafafa;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* 셀 hover 효과 */
+  .cell:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+  
+  /* --- 리셋 버튼 스타일 --- */
+  #reset {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  #reset:hover {
+    background-color: #43a047;
+    transform: translateY(-2px);
+  }
+  
+  /* --- 게임 상태 메시지 스타일 --- */
+  #message {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
