@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>삼목 게임</title>
+    <!-- Google Fonts 연동 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 외부 CSS 파일(styles.css) 연동 -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>삼목 게임</h1>
+    <!-- 게임 보드: 9개의 셀을 그리드로 배치 -->
+    <div id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+    <!-- 게임 진행 상황 메시지 영역 -->
+    <div id="message"></div>
+    <!-- 게임 리셋 버튼 -->
+    <button id="reset">게임 리셋</button>
+
+    <!-- 외부 JavaScript 파일(script.js) 연동 -->
+    <script src="script.js"></script>
+  </body>
+</html>
